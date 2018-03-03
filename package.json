@@ -80,7 +80,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/unlight/webpack-loader-helper.git"
+    "url": "https://github.com/unlight/webpack-loader-helper.git"
   },
   "keywords": [
     "webpack",
