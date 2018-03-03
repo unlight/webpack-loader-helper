@@ -55,21 +55,24 @@
     "lib": "lib"
   },
   "engines": {
-    "node" : ">=6",
+    "node": ">=6",
     "npm": ">=3"
   },
   "release": {
     "verifyConditions": [
       "@semantic-release/changelog",
-      "@semantic-release/git",
-      "@semantic-release/npm"
+      "@semantic-release/npm",
+      "@semantic-release/git"
     ],
-    "publish": [
+    "prepare": [
       {
         "path": "@semantic-release/changelog",
         "changelogFile": "CHANGELOG.md"
       },
-      "@semantic-release/git",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "publish": [
       "@semantic-release/npm"
     ]
   },
